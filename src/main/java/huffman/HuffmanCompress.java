@@ -240,6 +240,11 @@ public class HuffmanCompress {
 
         int site = 0;
         List<Byte> byteList = new ArrayList<>();
+        /*
+        注意 由于字符串的截取 substring 截取时 取前不取后
+        所以i一定要往后多走一位，保证最后一位也被扫描到
+        所以这里的 i 是 小于等于 而不是 小于
+        */
         for (i = 1 ; i <= stringBuilder.length(); i++){
             Byte b = map.get(stringBuilder.substring(site, i));
             if (b != null){
