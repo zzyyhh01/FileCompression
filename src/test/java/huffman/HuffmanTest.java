@@ -35,7 +35,7 @@ public class HuffmanTest {
 
     @Test
     public void t2() throws IOException {
-        String path = "E:\\Notes\\redis\\redis.md";
+        String path = "C:\\Users\\53495\\Desktop\\test\\redis.md";
         String desPath = "C:\\Users\\53495\\Desktop\\test\\redis";
         HuffmanCompress.zipFile(path,desPath);
 
